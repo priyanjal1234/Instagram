@@ -28,7 +28,7 @@ const HomeRight = () => {
 
   return (
     <div className="px-6 py-12 flex flex-col gap-6">
-      {allUsers && currentUser && [currentUser,...allUsers.filter(user => user && user._id.toString() !== currentUser._id.toString())]
+      {allUsers && allUsers
         .map((user, index) => (
           <div
             key={index}
