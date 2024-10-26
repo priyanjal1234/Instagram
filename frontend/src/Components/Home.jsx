@@ -15,9 +15,9 @@ const Home = () => {
   useEffect(() => {
     async function fetchUserProfile() {
       let fetchUserProfileRes = await getUserProfile()
-      if(fetchUserProfileRes && fetchUserProfileRes.status === 200) {
+     
         dispatch(setcurrentUser(fetchUserProfileRes.data))
-      }
+      
     }
     fetchUserProfile()
   },[currentUser])
