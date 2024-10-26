@@ -7,7 +7,6 @@ import { toast } from "react-toastify";
 const HomeRight = () => {
   let dispatch = useDispatch();
   let { allUsers, currentUser } = useSelector((state) => state.user);
-  console.log(currentUser)
 
   useEffect(() => {
     async function fetchUsers() {
